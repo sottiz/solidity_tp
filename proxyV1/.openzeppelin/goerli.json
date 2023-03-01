@@ -1,0 +1,371 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x5a70fB046eE9c48473bC2b6198120B0Be75C06E1",
+    "txHash": "0xd473b1a5ceb09798297a12c04ec9812017436595e38f00822bdfbe33a6c7488e"
+  },
+  "proxies": [
+    {
+      "address": "0x3FB6B285AB80D39557fA7c767Ee12F06329d7626",
+      "txHash": "0x5f81ebbffb5c409a01b6be77a8050928f3a7dabf8c782ae6cc49ead49dadb16d",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x29A9356515d56b7343Ccc45542Bac28c538b3396",
+      "txHash": "0xee14d5eb550bdee6e10b55f0ad7d01e5b81e47442c47d693c83f23281b6d04f1",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "883381539d0f39fa2db42dc13b5feab5d3e69f0acd180adcc2205ac6bb0b5bb8": {
+      "address": "0xcf00fA88936e2145eFe800E067eb6890F7fBcb88",
+      "txHash": "0xaf439e5ea59121a318bf253236de7bcd741b54d0c2725d30d4d2d2f9603fd26b",
+      "layout": {
+        "solcVersion": "0.8.10",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "val",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "CalculatorV1",
+            "src": "contracts/CalculatorV1.sol:8"
+          }
+        ],
+        "types": {
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "0dd5fb43cc32041620d517679a9157ecc6e8c5e21f79b95ed7c054dd6ba7f970": {
+      "address": "0x8e1907d92501e8fC7298A59B1D0d00F262a93dEf",
+      "txHash": "0x675fa6b1ef92fb4e48a418c3055a1e4734a194332dc472927adc327127d0f1f8",
+      "layout": {
+        "solcVersion": "0.8.10",
+        "storage": [
+          {
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(AggregatorV3Interface)45",
+            "contract": "PriceConsumerV3",
+            "src": "contracts/PriceConsumerV3.sol:7"
+          }
+        ],
+        "types": {
+          "t_contract(AggregatorV3Interface)45": {
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          }
+        }
+      }
+    },
+    "d05833bda9f3deed892c0371e035c275308dac59eb18b4a1fe5b90e1ce969a5a": {
+      "address": "0xC1218901696124EBac83A91bbf01a7eEDE0b13db",
+      "txHash": "0xc560d54b50b58ae1b0df9f5059e2ac8be349295cc908fc86706c2324a3845112",
+      "layout": {
+        "solcVersion": "0.8.10",
+        "storage": [
+          {
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(AggregatorV3Interface)45",
+            "contract": "PriceConsumerV3",
+            "src": "contracts/PriceConsumerV3.sol:8"
+          },
+          {
+            "label": "nextBlockstamp",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "PriceConsumerV3",
+            "src": "contracts/PriceConsumerV3.sol:9"
+          },
+          {
+            "label": "users",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "PriceConsumerV3",
+            "src": "contracts/PriceConsumerV3.sol:11"
+          },
+          {
+            "label": "bets",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_address,t_struct(Bet)85_storage)",
+            "contract": "PriceConsumerV3",
+            "src": "contracts/PriceConsumerV3.sol:12"
+          },
+          {
+            "label": "pool",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "PriceConsumerV3",
+            "src": "contracts/PriceConsumerV3.sol:13"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(Bet)85_storage)": {
+            "label": "mapping(address => struct PriceConsumerV3.Bet)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Bet)85_storage": {
+            "label": "struct PriceConsumerV3.Bet",
+            "members": [
+              {
+                "label": "user",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "a95cd4ce38e79bbb558e67f8c6e240ef63e5a98ff076a86da37d8949e956dc53": {
+      "address": "0x949D04a99AD5D76bC96955cc14C9DAf1C32CA751",
+      "txHash": "0xf3b8e124c9d5c01ba24546a871d6ca6083c804ba3f921f965b331c2124ff716f",
+      "layout": {
+        "solcVersion": "0.8.10",
+        "storage": [
+          {
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(AggregatorV3Interface)45",
+            "contract": "PriceConsumerV3",
+            "src": "contracts/PriceConsumerV3.sol:8"
+          },
+          {
+            "label": "nextBlockstamp",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "PriceConsumerV3",
+            "src": "contracts/PriceConsumerV3.sol:9"
+          },
+          {
+            "label": "users",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "PriceConsumerV3",
+            "src": "contracts/PriceConsumerV3.sol:11"
+          },
+          {
+            "label": "bets",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_address,t_struct(Bet)87_storage)",
+            "contract": "PriceConsumerV3",
+            "src": "contracts/PriceConsumerV3.sol:12"
+          },
+          {
+            "label": "pool",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "PriceConsumerV3",
+            "src": "contracts/PriceConsumerV3.sol:13"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(Bet)87_storage)": {
+            "label": "mapping(address => struct PriceConsumerV3.Bet)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Bet)87_storage": {
+            "label": "struct PriceConsumerV3.Bet",
+            "members": [
+              {
+                "label": "user",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "prediction",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "3fd29fc428a0953d9dbeafb863f137d6c669056ab98ea8225c2a15e4aafa79bf": {
+      "address": "0x2F6dd50F9aFC539b483aDC1843D9096faDE223f0",
+      "txHash": "0x1ec97000ecb749e7b2d087609d91bebc538720f5776356515aff13429317ae33",
+      "layout": {
+        "solcVersion": "0.8.10",
+        "storage": [
+          {
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(AggregatorV3Interface)45",
+            "contract": "PriceConsumerV3",
+            "src": "contracts/PriceConsumerV3.sol:8"
+          },
+          {
+            "label": "nextBlockstamp",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "PriceConsumerV3",
+            "src": "contracts/PriceConsumerV3.sol:9"
+          },
+          {
+            "label": "users",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "PriceConsumerV3",
+            "src": "contracts/PriceConsumerV3.sol:11"
+          },
+          {
+            "label": "bets",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_address,t_struct(Bet)87_storage)",
+            "contract": "PriceConsumerV3",
+            "src": "contracts/PriceConsumerV3.sol:12"
+          },
+          {
+            "label": "pool",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "PriceConsumerV3",
+            "src": "contracts/PriceConsumerV3.sol:13"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(Bet)87_storage)": {
+            "label": "mapping(address => struct PriceConsumerV3.Bet)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Bet)87_storage": {
+            "label": "struct PriceConsumerV3.Bet",
+            "members": [
+              {
+                "label": "user",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "prediction",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}
